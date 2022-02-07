@@ -1,0 +1,142 @@
+$black:#231f20;
+$white:#FFFFFF;
+$darkGray:#333;
+$gray:#6d6e71;
+$lightGray:#808285;
+
+.donate-section {
+  margin:50px 0;
+  
+  .content {
+    background: white;
+  }
+
+  .donate-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:50%;
+    margin-left:0;
+  }
+
+  h2 {
+    font-size:47px;
+    color:gray;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom:10px;
+    border-bottom:1px solid pink;
+    max-width:500px;  
+  }
+
+  h5 {
+    color:gray;
+    margin-bottom: 20px;
+    max-width:500px;
+  }
+
+  .simpay-form-control {
+    margin-bottom:12px;
+  }
+
+  .simpay-stripe_checkout-form-wrap {
+    width:100%;
+    max-width:500px;
+
+    label {
+      text-transform: uppercase;
+    }
+
+    textarea, select, input {
+      width:100%;
+    }
+  }
+
+  .simpay-currency-symbol {
+    position: absolute;
+    top:2px;
+    left:-4px;
+    margin-left: -26px;
+    margin-right: -6px;
+  }
+  
+  .simpay-custom-amount-wrap {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    
+    input {
+      padding:14px;
+      border-color:pink;
+      width:100%;
+    }
+  }
+
+  .simpay-text-wrap {
+
+    text, textarea {
+      padding:14px;
+    }
+  }
+
+  .simpay-payment-btn {
+    position: relative;
+    display: inline-block;
+    font: 400 17px/1 "Brandon",sans-serif;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color:pink;
+    padding:26px 46px;
+    transition:background-color .3s ease;
+    border:none;
+    outline:none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    background-color:pink;
+    cursor:pointer;
+
+    &:hover {
+      background:black;
+    }
+  }
+
+  .simpay-checkbox-wrap input[type="radio"], .simpay-checkbox-wrap input[type="checkbox"], .simpay-radio-wrap input[type="radio"], .simpay-radio-wrap input[type="checkbox"], .simpay-multi-plan-radio-group input[type="radio"], .simpay-multi-plan-radio-group input[type="checkbox"] {
+    -webkit-appearance: auto;
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+
+  .simpay-dropdown-wrap select {
+    padding:14px 20px 14px 14px;
+    font: 400 17px/1 "Brandon",sans-serif;
+  }
+}
+
+
+
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+  .donate-section {
+    
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .donate-section {
+
+    .content {
+      width:100%;
+    }
+  }
+}

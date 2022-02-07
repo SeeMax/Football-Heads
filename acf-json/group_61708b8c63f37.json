@@ -1,0 +1,184 @@
+{
+    "key": "group_61708b8c63f37",
+    "title": "Board Members and Advisors",
+    "fields": [
+        {
+            "key": "field_52f03ab4f3f76",
+            "label": "Profile Image",
+            "name": "profile_image",
+            "type": "image",
+            "instructions": "Image Dimensions: 294 x 294 pixels",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_52f03afef3f77",
+            "label": "Job Description",
+            "name": "job_description",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_52f03b69f3f78",
+            "label": "Board Member or Advisor",
+            "name": "board_member_or_advisor",
+            "type": "radio",
+            "instructions": "Is this a Board Member or Advisor?",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "board_member": "Board Member",
+                "advisor": "Advisor"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_52f03bbbf3f79",
+            "label": "Bio",
+            "name": "board_bio",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "tabs": "all",
+            "delay": 0
+        },
+        {
+            "key": "field_52f039basdfasdfc9f5cc",
+            "label": "Email Address",
+            "name": "team_email_address",
+            "type": "email",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "john@possiblehealth.org",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_52f039db9f5csdfad",
+            "label": "LinkedIn Profile",
+            "name": "linkedin_profile",
+            "type": "text",
+            "instructions": "URL of the board member\"s linked in profile.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "http:\/\/linkedin.com\/brian.harrison",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_52f039db9f5sadfascdiug8",
+            "label": "Twitter Profile",
+            "name": "twitter_profile",
+            "type": "text",
+            "instructions": "URL of the board member\"s twitter profile.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "http:\/\/twitter.com\/brian.harrison",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "board_advisor"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1634836314
+}

@@ -1,0 +1,284 @@
+$black:#231f20;
+$white:#FFFFFF;
+$darkGray:#333;
+$gray:#6d6e71;
+$lightGray:#808285;
+
+.team-grid-section {
+  margin-bottom: 50px;
+
+  h2 {
+    color:pink;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:40px;
+  }
+
+  .content {
+    padding-bottom:0;
+  }
+}
+
+.team-grid-nav {
+  width:100%;
+  display: flex;
+  flex-wrap:wrap;
+  text-align: center;
+  cursor:pointer;
+}
+
+.single-team-grid-nav {
+  position: relative;
+  flex:1;
+  color:white;
+  background:pink;
+  padding:22px 20px 20px 20px;
+  z-index:11;
+  transition:color .5s ease;
+
+  .grid-arrow {
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:20px;
+    height:20px;
+    transform:rotate(45deg);
+    background:pink;
+  }
+  
+  &:nth-of-type(2n) {
+    background:pink;
+
+    .grid-arrow {
+      background:pink;
+    }
+  }
+  
+  &:nth-of-type(3n) {
+    background:blue;
+
+    .grid-arrow {
+      background:blue;
+    }
+  }
+
+  h4 {
+    position: relative;
+    text-transform: uppercase;
+  }
+
+
+  &:hover {
+    color:pink;
+  }
+
+}
+
+.team-grid-container {
+  position:relative;
+  width:100%;
+  height:auto;
+  background: white;
+}
+
+.team-grid-topic-area {
+  position:absolute;
+  top:0;
+  left:0;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width:100%;
+  margin-bottom:50px;
+  padding:50px;
+  z-index:10;
+}
+
+.single-team-grid-team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  padding:0px 40px;
+  margin-bottom:40px;
+  cursor:pointer;
+  
+  .team-image-mask {
+    position: relative;
+    width:100%;
+    height:0;
+    padding-bottom:100%;
+    border-radius:50%;
+    border:1px solid gray;
+    overflow:hidden;
+    margin-bottom:24px;
+    transition:border-color .5s ease;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    color:pink;
+    transition:color .5s ease;
+    margin-bottom:6px;
+  }
+
+  h5 {
+    font-size:14px;
+    color:gray;
+  }
+
+  &:hover {
+    
+    .team-image-mask {
+      border-color:pink;
+    }
+
+    h4 {
+      color:pink;
+    }
+  }
+}
+
+
+.team-grid-full-page-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  z-index:-1;
+  opacity:0;
+}
+
+.single-team-popup {
+  display: flex;
+  flex-wrap: wrap;
+  z-index:-1;
+  opacity:0;
+  text-align:left;
+  position: absolute;
+  top:100px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  width:calc(100% - 200px);
+  background:white;
+  padding:50px 100px;
+
+  .popup-image-mask {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    border: 1px solid #f3f3f3;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: border-color .5s ease;
+  }
+
+  .team-pop-up-image {
+
+  }
+
+  .team-pop-up-text {
+    padding-left:40px;
+  }
+
+  h3 {
+    display: inline-block;
+    width:auto;
+    text-transform:uppercase;
+    color:pink;
+    margin-bottom:6px;
+  }
+
+  h5 {
+    color:gray;
+    margin-bottom:24px;
+  }
+
+  .contact-info {
+    position: relative;
+    top:-2px;
+
+    i {
+      margin-left:16px;
+      
+    }
+
+    a {
+      color:pink;
+    }
+  }
+
+  .single-team-popup-close {
+    cursor:pointer;
+    position: absolute;
+    right:16px;
+    top:16px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:1px solid pink;
+    display: flex;
+    color:pink;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    padding-bottom:3px;
+    padding-left:1px;
+    text-align: center;
+  }
+}
+
+.editor-styles-wrapper {
+  .team-grid-topic-area {
+    position: relative !important;
+  }
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+  
+  .single-team-popup {
+    padding:50px  ;
+    width:calc(100% - 30px);
+  }
+}
+
+// 1024px And Below
+@media screen and (max-width: 900px){
+  
+  .single-team-grid-team {
+    width:50%;
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 768px){
+
+  .single-team-grid-team {
+    width:100%;
+  }
+
+  .single-team-grid-nav {
+    flex:auto;
+    width:100%;
+  }
+
+  .single-team-popup {
+    width:calc(100% - 30px);
+    padding:50px 20px;
+  
+    .team-pop-up-text {
+      padding-left:0px;
+    }
+  }
+
+}

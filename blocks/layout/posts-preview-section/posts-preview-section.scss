@@ -1,0 +1,39 @@
+$black:#231f20;
+$white:#FFFFFF;
+$darkGray:#333;
+$gray:#6d6e71;
+$lightGray:#808285;
+
+
+.posts-preview-section {
+
+  h2 {
+    text-align: center;
+  }
+
+  .single-post-preview {
+
+  }
+
+  .all-posts-button-area {
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-top:50px;
+
+    .seemax-button {
+      display: inline-block;
+    }
+  }
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+
+}

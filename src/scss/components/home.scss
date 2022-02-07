@@ -1,0 +1,1132 @@
+@import "colors";
+
+.preloader-fill-1{
+	fill:#b06f42;
+}
+
+.preloader-fill-2{
+	fill:#fff;
+}
+
+.preloader-fill-3{
+	fill:#bb7b4c;
+}
+
+.preloader-fill-4{
+	fill:#894e2b;
+}
+
+.preloader-fill-5{
+	fill:#995d36;
+}
+
+.preloader-fill-6{
+	fill:#c6b3a6;
+}
+
+.preloader-fill-7{
+	fill:black;
+}
+
+.preloader-fill-8{
+	fill:$red;
+}
+
+///////////////////////////////
+//////////////////////////////
+// Section 1 / Hero Section
+
+.hero-section {
+	background:$green2;
+	color:white;
+	overflow:hidden;
+
+	.content {
+		padding-top:160px;
+	}
+}
+
+.grass-stripe-area {
+	top:-50%;
+	left:-50%;
+	width:200%;
+	height:200%;
+	transform: rotate(-30deg);
+}
+
+.grass-stripe{
+	fill:$green1;
+}
+
+.grass-stripe-back {
+	fill:$green2;
+}
+
+.hero-preheader {
+	font-size:34px;
+	margin-bottom:46px;
+	text-shadow: 0px 5px #006D02;
+}
+
+
+.hero-body-copy {
+	max-width:500px;
+	margin-bottom:60px;
+}
+
+.don-test-area {
+	// display:none;
+	position: absolute;
+	left:-200px;
+	bottom:0;
+	padding:40px 30px;
+	margin:30px;
+	border:10px solid white;
+
+	h4 {
+		margin-bottom:15px;
+	}
+
+	button {
+		margin-top:20px;
+	}
+}
+
+.head-preview-images {
+	width:100%;
+	height:auto;
+	margin-bottom:40px;
+	transform:translateY(-24px);
+
+	img {
+		border:5px solid white;
+		width:100%;
+		max-width:210px;
+		position: relative;
+		box-shadow:0px 10px rgba(0,0,0,0.2);
+		z-index:3;
+
+		&:nth-of-type(1) {
+			z-index:1;
+			transform: rotate(-10deg) translateX(10px);
+		}
+
+		&:nth-last-of-type(1) {
+			z-index:2;
+			transform: rotate(10deg) translateX(-10px);
+		}
+	}
+
+	.middle-gif {
+		max-width:260px;
+	}
+}
+
+.sold-out-message {
+	color:$yellow;
+	margin-bottom:1em;
+	font-size:2em;
+}
+
+.one-special-square {
+	border:5px solid white;
+	padding:20px 30px;
+	margin-top:20px;
+	// max-width:700px;
+	line-height:1.5;
+}
+
+.hero-button-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width:100%;
+	height:auto;
+	margin-bottom:30px;
+	// padding-left:60px;
+}
+
+.mint-button {
+	cursor:pointer;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+	// margin-right:20px;
+
+	span {
+		display:inline-block;
+	}
+}
+
+.mint-plus-minus {
+	display: inline-block;
+}
+
+.plus-minus-button {
+	cursor:pointer;
+	font-family: 'Press Start 2P', cursive;
+	display:inline-flex;
+	line-height: 1;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background:$red;
+	width:56px;
+	height:56px;
+	padding-top:2px;
+	border-radius:50%;
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+	margin:0px 9px;
+	transition: all .3s ease;
+
+	&:hover {
+		box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	}
+
+	&:nth-of-type(1) {
+		// margin-bottom:10px;
+	}
+}
+
+
+.walkthrough-button {
+	display: none;
+	padding:15px 19px 15px 21px;
+	// display: inline-block;
+	background: black;
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,0);
+	margin-right:-63px;
+	transform: translateX(10px);
+	
+	&:hover {
+		color:$red;
+		box-shadow: 4px 4px 0px 0px rgba(0,0,0,0);
+	}
+}
+
+.total-minted {
+	font-family: 'Press Start 2P', cursive;
+	color:$yellow;
+}
+
+.the-ticker-section {
+	background: black;
+	color:white;
+	padding:28px 0 18px 0;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+
+	h2 {
+		line-height: 1;
+		display: inline-block;
+		width:auto;
+		margin:0 0.5em;
+	}
+
+	span {
+		display: inline-block;
+	}
+}
+
+
+///////////////////////////////
+//////////////////////////////
+// Section 2 / Square Section
+
+.the-squares-section {
+	background: white;
+
+	h2 {
+		margin-bottom:20px;
+	}
+}
+
+.squares-body-copy {
+	margin-bottom:100px;
+}
+
+.grid-area {
+	position: relative;
+	color:$green1;
+	font:400 40px/1 'Press Start 2P', cursive;
+	width:100%;
+	display: flex;
+	margin-top:40px;
+	
+	.confrence-name {
+		position: absolute;
+		letter-spacing:2px;
+	}
+	
+	.afc-name {
+		text-orientation:upright;
+		writing-mode: vertical-rl;
+		width:auto;
+		left:-70px;
+		top:0;
+		// padding-top:100px;
+		height:100%;
+	}
+	
+	.nfc-name {
+		position: absolute;
+		top:-70px;
+		left:50px;
+		width:100%;
+	}
+
+	.single-column {
+
+	}
+
+	.single-grid-item {
+		position: relative;
+		border-right:2px solid $green1;
+		border-bottom:2px solid $green1;
+		height:100px;
+		width:100px;
+		display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+	}
+
+	.single-grid-top {
+		height:120px;
+		padding-top:20px;
+		
+		&:before {
+			content:"";
+			position: absolute;
+			left:20px;
+			top:0;
+			width:20px;
+			height:20px;
+			border-left:2px solid $green1;
+			border-right:2px solid $green1;
+		}
+
+		&:after {
+			content:"";
+			position: absolute;
+			right:20px;
+			top:0;
+			width:20px;
+			height:20px;
+			border-left:2px solid $green1;
+			border-right:2px solid $green1;
+		}
+	}
+
+	.column-numbers {
+
+		.single-grid-item {
+			width:120px;
+
+			span {
+				position: relative;
+				top:1px;
+				padding-left:20px;
+				width:100%;
+				height:auto;
+				display: inline-block;
+			}
+	
+			&:before {
+				content:"";
+				position: absolute;
+				top:20px;
+				left:0;
+				width:20px;
+				height:20px;
+				border-top:2px solid $green1;
+				border-bottom:2px solid $green1;
+			}
+	
+			&:after {
+				content:"";
+				position: absolute;
+				bottom:20px;
+				left:0;
+				width:20px;
+				height:20px;
+				border-top:2px solid $green1;
+				border-bottom:2px solid $green1;
+			}
+		}
+
+		#blank-corner {
+			&:before, &:after {
+				display:none;
+			}
+		}
+
+	}
+}
+
+
+.post-grid-copy {
+	margin-top:80px;
+}
+
+
+///////////////////////////////
+//////////////////////////////
+// Section 3 / How It Works
+
+.how-it-works-section {
+	background:black;	
+	color:white;
+
+	h2 {
+		margin-bottom:10px;
+	}
+}
+
+.steps-area {
+	margin-top: 80px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+
+.single-step {
+	position: relative;
+	display: flex;
+	flex-wrap:wrap;
+	// justify-content: center;
+	margin-bottom:60px;
+	text-align: left;
+	border-right:5px solid white;
+
+	&:before {
+		content:"";
+		position: absolute;
+		top:5px;
+		right:-10px;
+		width:5px;
+		height:calc(100% - 1px);
+		background-color:$yellow;
+	}
+
+
+	&:after {
+		content:"";
+		position: absolute;
+		bottom:-9px;
+		left:10px;
+		width:calc(100% - 5px);
+		height:5px;
+		background-color:$yellow;
+	}
+}
+
+.single-step-name {
+	text-align:center;
+	position: relative;
+	font-family: 'Press Start 2P', cursive;
+	width:100%;
+	color:white;
+	padding:14px 45px 10px 45px;
+	border-left:5px solid white;
+	// border-right:5px solid white;
+	
+	&:before {
+		content:"";
+		position: absolute;
+		top:-5px;
+		left:0px;
+		width:100%;
+		height:5px;
+		background-color:white;
+	}
+
+
+	&:after {
+		content:"";
+		position: absolute;
+		bottom:-6px;
+		left:0px;
+		width:calc(100% + 5px);
+		height:5px;
+		background-color:white;
+	}
+}
+
+.single-step-info {
+	padding:40px 40px 50px 40px;
+	position: relative;
+	color:white;
+	border-left:5px solid white;
+	// border-right:5px solid white;
+	margin-top:6px;
+	
+	&:after {
+		content:"";
+		position: absolute;
+		bottom:-4px;
+		left:0px;
+		width:100%;
+		height:5px;
+		background-color:white;
+	}
+
+	h4 {
+		margin-bottom: 1em;
+		text-align: left;
+		color:$yellow;
+		line-height: 1.5;
+		// text-shadow: 2px 3px #006D02;
+	}
+}
+
+///////////////////////////////
+//////////////////////////////
+// Section 4 / The Rules
+
+.the-rules-section {
+	overflow: hidden;
+	// text-align:left;
+	background:$yellow;
+	// text-align: left;
+	
+	.content {
+		// padding-top:90px;
+		padding-bottom:150px;
+		flex-direction:row;
+		justify-content: space-around;
+		align-items: flex-start;
+		align-content: flex-start;
+		// max-width:800px;
+	}
+
+	h2 {
+		color:white;
+		text-shadow:3px 2px #000;
+		// text-shadow:3px 2px #fff;
+		// text-align: left;
+		margin:0 auto 70px auto;
+	}
+
+	h4 {
+		// color:white;
+		// text-align: left;
+		margin-bottom:10px;
+
+	}
+
+	.single-rule {
+		// width:100%;
+		position: relative;
+		
+		
+		&:nth-of-type(1) {
+			margin-bottom:30px;
+		}
+	}
+		
+	.star-span {
+		// font-size:.8em;
+		// position: absolute;
+		// margin-left:-2em;
+		transform: translateY(-2px);
+		margin:0px 14px;
+	}		
+}
+
+
+///////////////////////////////
+//////////////////////////////
+// Section 4 / Prize Breakdown
+
+.prize-breakdown-section {
+	background:$green1;
+
+	.content {
+		padding-top:150px;
+	}
+
+	h2 {
+		color:$yellow;
+		margin-bottom:2em;
+	}
+
+	.quarter-percentage {
+		color:white;
+		margin-bottom:1.6em;
+	}
+}
+			
+///////////////////////////////
+//////////////////////////////
+// Section 5 / Rookie Section
+
+.nft-rookie-section {
+	background:black;
+	color:white;
+
+	h2 {
+
+		.rookie-title {
+			display: inline-block;
+		}
+
+		
+		.star-span {
+
+		}
+	}
+}
+
+
+.nft-rookie-instruction-area {
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	align-items: center;
+	width:100%;
+	max-width:750px;
+	font-family: 'Press Start 2P', cursive;
+
+}
+
+.rookie-steps-area {
+	max-width:400px;
+	margin:20px 0 30px 0px;
+	text-align: left;
+	transform:translateX(70px);
+}
+
+.single-rookie-step {
+	position: relative;
+	margin:60px 0px;
+	
+	span {
+		position:relative;
+		color:$red;
+		font-size:16px;
+		position: absolute;
+		border-left:5px solid $red;
+		border-right:5px solid $red;
+		left:-63px;
+		top:-7px;
+		padding:12px 10px 10px 11px;
+		line-height: 1;
+
+		&:before {
+			content:"";
+			position: absolute;
+			top:-4px;
+			left:0px;
+			width:100%;
+			height:5px;
+			background-color:$red;
+		}
+
+		&:after {
+			content:"";
+			position: absolute;
+			bottom:-4px;
+			left:0px;
+			width:100%;
+			height:5px;
+			background-color:$red;
+		}
+	}
+
+	.rookie-step-star {
+		font-size:70px;
+		left:-80px;
+		top:-40px;
+		color:$red;
+	}
+}
+
+.financial-safety {
+	font-family:'Wotfard', sans-serif;
+	font-size:14px;
+	color:white;
+	max-width:500px;
+	margin-top:80px;
+	color:$red;
+}
+			
+///////////////////////////////
+//////////////////////////////
+// Section 6 / Paydirt Section
+			
+.paydirt-section {
+	background:$blue;
+	color:white;
+	font-family: 'Press Start 2P', cursive;
+
+	.real-big {
+		font-size:140px;
+		line-height:1;
+		color:$red;
+		text-shadow:7px -5px #fff;
+		margin-bottom:24px;
+	}
+
+	.paydirt-winners-area {
+		width:100%;
+		max-width:1150px;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		align-content:flex-end;
+		align-items:flex-end;
+		margin-top:80px;
+		
+		p {
+			
+		}
+	}
+
+	.single-paydirt-winner {
+		text-align:left;
+	}
+
+	.paydirt-big-winner {
+		
+	}
+
+	
+
+	.paydirt-winner-top {
+
+	}
+
+	.paydirt-winner-qtr {
+		margin-bottom:3px;
+		text-shadow:2px 1px $red;
+	}
+
+
+	.paydirt-winner-percent {
+		margin-bottom:12px;
+		font-size:14px;
+	}
+
+	.percent-seperator {
+		color:$red;
+	}
+
+	.paydirt-winner-image {
+		border:5px solid white;
+		margin-bottom:24px;
+		box-shadow: 0px 10px rgba(0,0,0,.2);
+			
+		img {
+			width:100%;
+		}
+	}
+						
+	.paydirt-winner-money {
+		text-align:left;
+		display: inline-block;
+		width:100%;
+		margin-top:0px;
+	}
+
+	.paydirt-winnerETH {
+		font-size:14px;
+	}
+
+	.paydirt-winnerUSD {
+		margin-top:3px;
+		font-size:20px;
+		text-shadow:2px 1px $red;
+
+		span {
+			display: inline-block;
+			width:auto;
+			transform:translateY(-10px) translateX(2px);
+			font-family:'Wotfard', sans-serif;
+			font-size:24px;	
+			// color:$red;
+			text-shadow:0px 0px $red;
+		}
+	}
+
+	.price-disclaimer {
+		font-family:'Wotfard', sans-serif;
+		font-size:14px;
+		max-width:550px;
+		margin-top:120px;
+
+		span {
+			font-size:20px;
+		}
+	}
+
+}
+			
+///////////////////////////////
+//////////////////////////////
+// Section 7 / Then What Section
+		
+.then-what-section {
+	background:$green2;
+	overflow:hidden;
+
+	.grass-stripe-area {
+		width:100%;
+		height:100%;
+		left:0;
+		top:0;
+		transform: rotate(0deg);
+	}
+
+	.clock-line {
+		color:white;
+	}
+
+	.then-what-box {
+		position: relative;
+		box-shadow:5px 5px black;
+
+		// &:before {
+		// 	content:"";
+		// 	position: absolute;
+		// 	top:5px;
+		// 	right:-5px;
+		// 	width:5px;
+		// 	height:calc(100% - 1px);
+		// 	background-color:$yellow;
+		// }
+	
+	
+		// &:after {
+		// 	content:"";
+		// 	position: absolute;
+		// 	bottom:-5px;
+		// 	left:5px;
+		// 	width:calc(100% - 5px);
+		// 	height:5px;
+		// 	background-color:$yellow;
+		// }
+	}
+
+	h3 {
+		position: relative;
+		padding:27px 25px 25px 25px;
+		line-height: 1;
+		background: black;
+		border-left:5px solid white;
+		border-right:5px solid white;
+		margin-bottom:5px;
+
+		&:before {
+			content:"";
+			position: absolute;
+			top:-5px;
+			left:0px;
+			width:100%;
+			height:5px;
+			background-color:white;
+		}
+	
+	
+		&:after {
+			content:"";
+			position: absolute;
+			bottom:-5px;
+			left:0px;
+			width:calc(100% + 5px);
+			height:5px;
+			background-color:white;
+		}
+	}
+
+	.then-what-box-words {
+		position: relative;
+		padding:60px 60px 70px 60px;
+		background:white;
+		border:5px solid white;
+
+
+		&:before {
+			content:"";
+			position: absolute;
+			top:-5px;
+			left:0px;
+			width:100%;
+			height:5px;
+			background-color:rgba(0,0,0,0.1);
+		}
+	
+	
+		&:after {
+			content:"";
+			position: absolute;
+			left:0px;
+			top:0px;
+			height:100%;
+			width:5px;
+			background-color:rgba(0,0,0,0.1);
+		}
+	}
+
+	h2 {
+		margin-bottom:20px;
+	}
+
+	p {
+		max-width:600px;
+	}
+
+	.what-clock-border-3 {
+		border:4px solid white;
+		height:1em;
+		width:10px;
+	}
+
+	.what-clock-border-2 {
+		border:4px solid white;
+		transform:translateY(.25em) translateX(19px);
+		height:1.5em;
+		width:17px;
+	}
+
+	.what-clock-border-1 {
+		border:4px solid white;
+		transform:translateY(.5em) translateX(45px);
+		height:2em;
+		width:25px;
+	}
+	
+	.what-clock-border-l, .what-clock-border-r { 
+		display: inline-block;
+	}
+	.what-clock-border-l {
+		border-right:0px solid black;
+	}
+
+	.what-clock-border-r {
+		border-left:0px solid black;
+	}
+}
+			
+			
+.our-team-section {
+	background:black;
+	color:white;
+	font-family: 'Press Start 2P', cursive;
+
+	h2 {
+		margin-bottom:80px;
+	}
+}
+
+.our-team-member-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width:100%;
+	font-size:12px;
+	line-height: 1.8;
+}
+
+.single-our-team-member {
+
+	img {
+		border:5px solid white;
+		width:100%;
+		margin-bottom:24px;
+	}
+}
+			
+			
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.home-page {
+
+	}
+
+	.desktop-only {
+		display: none !important;
+	}
+	
+	.mobile-only {
+		display:inline-block;
+	}
+
+	.walkthrough-button {
+		display: none;
+	}
+
+
+	.grid-area {
+
+		.nfc-name {
+			position: absolute;
+			top: 0;
+			left: 40px;
+			width: auto;
+		}
+
+
+		.afc-name {
+			left: 0px;
+			top: 40px;
+			height: 60px;
+		}
+	}
+
+	.squares-body-copy {
+		margin-bottom:40px;
+	}
+
+	.the-squares-section {
+
+		h4 {
+			margin-bottom:14px;
+		}
+	}
+
+	.single-step {
+		width:100%;
+	}
+
+	.nft-rookie-section {
+		
+		h2 {
+
+			.rookie-title {
+				width: 100%;
+				margin: 10px 0;
+			}
+		}
+	}
+
+	.grass-stripe-area {
+		transform: rotate(-10deg);
+	}
+
+	.then-what-section {
+	
+		.grass-stripe-area {
+			transform: rotate(0deg);
+		}
+	}
+
+
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.home-page {
+
+	}
+
+	.hero-section {
+
+		.content {
+			padding-top:100px;
+		}
+	}
+	
+	.hero-preheader {
+    font-size: 20px;
+    margin-bottom: 26px;
+    text-shadow: 0px 4px #006d02;
+	}
+	
+	.head-preview-images {
+		transform:translateY(-4px);
+
+		img {
+			box-shadow:0px 4px rgba(0,0,0,0.2);
+			width:26%;
+			// margin-top:10px;
+			
+
+			&:nth-of-type(2) {
+				width:32%;
+				transform:translateY(-4px);
+			}
+		}
+	}
+
+	.mint-button {
+		font-size:.8em;
+	}
+
+	
+		
+		.plus-minus-button {	
+			margin:15px 9px;	
+			order:2;
+			width:40px;
+			height:40px;
+			
+		
+			&:nth-of-type(1) {
+				order:1;
+			}
+		}
+
+	.mint-count {
+		font-size: 1em;
+	}
+
+	.grid-area {
+		overflow:scroll;
+	}
+
+	.hero-button-row {
+		margin-bottom:20px;
+	}
+
+	.walkthrough-button {
+		padding: 14px;
+    font-size: 16px;
+    transform: translateX(5px);
+    line-height: 1;
+		margin-right: -43px;
+	}
+
+	.paydirt-section {
+
+		.real-big {
+			font-size:50px;
+			margin-bottom:24px;
+			text-shadow: 2px -2px #fff;
+		}
+	
+		.single-paydirt-winner {
+			margin-bottom:60px;
+		}
+	}
+
+	.rookie-steps-area {
+    padding-right: 70px;
+	}
+
+	.our-team-section {
+		
+		h2 {
+			margin-bottom:40px;
+		}
+	}
+
+	.single-our-team-member {
+		margin-bottom:60px;
+	}
+	
+	.the-rules-section {
+
+		.star-span {
+			display:none;
+		}
+	}
+}

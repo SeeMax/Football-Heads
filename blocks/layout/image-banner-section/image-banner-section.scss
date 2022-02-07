@@ -1,0 +1,73 @@
+$black:#231f20;
+$white:#FFFFFF;
+$darkGray:#333;
+$gray:#6d6e71;
+$lightGray:#808285;
+
+.image-banner-section {
+  margin:50px 0;
+  min-height:500px;
+
+  .content {
+    justify-content:center;
+    align-items: center;
+    min-height:500px;
+  }
+
+  .image-banner-background-image {
+    min-height:500px;
+  }
+
+  .image-banner-background-pattern {
+    opacity: 0.5;
+    background-image: radial-gradient($lightGray 0.5px, rgba(0,0,0,.8) 0.5px);
+    background-size: 3px 3px;
+    transition:all .3s ease;
+  }
+
+  &:hover {
+    
+    .image-banner-background-pattern {
+      opacity:0.8;
+      background-image: radial-gradient(pink 0.5px, pink 0.5px);
+      background-size: 6px 6px;
+    }
+  }
+
+  .headline-container {
+    position: relative;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    border:3px solid white;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+  .image-banner-section {
+    
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .image-banner-section {
+
+    .content {
+      width:100%;
+    }
+  }
+}

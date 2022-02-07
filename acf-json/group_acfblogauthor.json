@@ -1,0 +1,38 @@
+{
+    "key": "acf_blog_author",
+    "title": "Blog Author",
+    "fields": [
+        {
+            "key": "field_52f13234234a8d37ec3",
+            "label": "Blog Post Author",
+            "name": "blog_post_author",
+            "type": "text",
+            "instructions": "Please enter the author you would like to display on the front-end",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1633037848
+}

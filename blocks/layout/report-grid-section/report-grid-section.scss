@@ -1,0 +1,162 @@
+$black:#231f20;
+$white:#FFFFFF;
+$darkGray:#333;
+$gray:#6d6e71;
+$lightGray:#808285;
+
+.report-grid-section {
+
+  h2 {
+    color:pink;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:40px;
+  }
+}
+
+.report-grid-nav {
+  width:100%;
+  display: flex;
+  flex-wrap:wrap;
+  text-align: center;
+  cursor:pointer;
+}
+
+.single-report-grid-nav {
+  position: relative;
+  flex:1;
+  color:white;
+  background:pink;
+  padding:22px 20px 20px 20px;
+  z-index:11;
+  transition:color .5s ease;
+
+  .grid-arrow {
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:20px;
+    height:20px;
+    transform:rotate(45deg);
+    background:pink;
+  }
+  
+  &:nth-of-type(2n) {
+    background:pink;
+
+    .grid-arrow {
+      background:pink;
+    }
+  }
+  
+  &:nth-of-type(3n) {
+    background:blue;
+
+    .grid-arrow {
+      background:blue;
+    }
+  }
+
+  h4 {
+    position: relative;
+    text-transform: uppercase;
+  }
+
+
+  &:hover {
+    color:pink;
+  }
+
+}
+
+.report-grid-container {
+  position:relative;
+  width:100%;
+  height:auto;
+  background: white;
+}
+
+
+
+.report-grid-topic-area {
+  position:absolute;
+  top:0;
+  left:0;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width:100%;
+  margin-bottom:50px;
+  padding:50px;
+  z-index:10;
+}
+
+.editor-styles-wrapper {
+  .report-grid-topic-area {
+    position: relative !important;
+  }
+}
+
+.single-report-grid-report {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  padding:0px 40px;
+  margin-bottom:40px;
+  
+  .report-image-mask {
+    position: relative;
+    width:100%;
+    height:0;
+    padding-bottom:100%;
+    border-radius:50%;
+    border:1px solid gray;
+    overflow:hidden;
+    margin-bottom:30px;
+    transition:border-color .5s ease;
+  }
+
+  h4 {
+    color:pink;
+    transition:color .5s ease;
+  }
+
+  &:hover {
+    
+    .report-image-mask {
+      border-color:pink;
+    }
+
+    h4 {
+      color:pink;
+    }
+  }
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 900px){
+  
+  .single-report-grid-report {
+    width:50%;
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 768px){
+
+  .single-report-grid-report {
+    width:100%;
+  }
+
+  .single-report-grid-nav {
+    flex:auto;
+    width:100%;
+  }
+
+}
