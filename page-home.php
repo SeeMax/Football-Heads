@@ -769,7 +769,7 @@
 							</div>
 						</div>
 					</div>
-					<p class="price-disclaimer"><span>*</span>Current ETH and $ value calculated by <a href="https://www.coingecko.com/en/api">Coin Gecko</a>. ETH prices fluctuate. Prizes for each quarter will be awarded in ETH as valued at the end of the game.
+					<p class="price-disclaimer"><span>*</span>Current $ value is calculated by <a href="https://www.coingecko.com/en/api">Coin Gecko</a>. ETH to USD fluctuates. Prizes for each quarter will be awarded in ETH at the end of the game.
 				</div>
 			</section>
 	
