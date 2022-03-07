@@ -673,10 +673,10 @@ export let calcWinnings = () => {
   let fortyFivePerETH = $('.fortyFivePercentWinnerETH');
   let fifteenPerUSD = $('.fifteenPercentWinnerUSD');
   let fortyFivePerUSD = $('.fortyFivePercentWinnerUSD');
-  let totalPot = 1.98
+  let totalPot = 2.0752
 
-  fifteenPerETH.html(totalPot * 0.15+" ETH");
-  fortyFivePerETH.html(totalPot * 0.45+" ETH");
+  fifteenPerETH.html((totalPot * 0.15).toFixed(4) +" ETH");
+  fortyFivePerETH.html((totalPot * 0.45).toFixed(4) +" ETH");
   
   const settings = {
     "async": true,
@@ -693,8 +693,8 @@ export let calcWinnings = () => {
     // console.log(response.ethereum.usd);
     let currentUSD = response.ethereum.usd
 
-    let fifteenUSD = ((1.98 * 0.15) * currentUSD).toFixed(2);
-    let fortyFiveUSD = ((1.98 * 0.45) * currentUSD).toFixed(2);
+    let fifteenUSD = ((totalPot * 0.15) * currentUSD).toFixed(2);
+    let fortyFiveUSD = ((totalPot * 0.45) * currentUSD).toFixed(2);
 
 
     fifteenPerUSD.html("$"+fifteenUSD+"<span>*</span>");

@@ -121,6 +121,14 @@
 						<img class="middle-gif" src="<?php echo get_template_directory_uri(); ?>/dist/images/football_heads_hero.gif" alt="Logo">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/99-donald.png" alt="Aaron Donald">
 					</div>
+					<div class="game-day-message">
+						<h2>What A Game!</h2>
+						<h4>
+							See the winners <a href="#paydirt">below</a>.
+							<br><br>
+							And join our <a href="https://discord.com/invite/WeAACbGTnx">Discord</a> to find out what's next.
+						</h4>
+					</div>
 					<p class="hero-body-copy">
 						A limited collection of 100 NFTs that enter 
 						you to win a game of Super Bowl Squares (and likely more).
@@ -145,9 +153,10 @@
 					<!-- <h4 class="total-minted"> -->
 						<!-- <span class="total-minted-count">100</span>/100 minted -->
 					<!-- </h4> -->
-					<h4 class="one-special-square">
-						We're doing something special with ONE forgotten square. Join our <a href="https://discord.com/invite/WeAACbGTnx">Discord</a> for details
-					</h4>
+					<!-- <h4 class="one-special-square">
+						Square 00 is up for auction on OpenSea!<br>
+						<a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62011514321253100823340399624197549423776478235621146892961433238554804224001">Make a bid</a> for the best square. 
+					</h4> -->
 					<!-- <p><br>To mint you'll need a wallet like <a href="https://metamask.io/" targert="_blank">Metamask.</a><br>
 						Please mint on desktop.</p> -->
 				</div>
@@ -155,8 +164,8 @@
 			<section class="the-ticker-section">
 				<h2 class="single-ticker-text">AFC Champ: CIN 27 KC 24 …</h2>
 				<h2 class="single-ticker-text">NFC Champ: LA 20 SF 17 …</h2>
-				<h2 class="single-ticker-text">We're doing something special with ONE forgotten square …</h2>
-				<h2 class="single-ticker-text">Join our Discord for details …</h2>
+				<!-- <h2 class="single-ticker-text">We're doing something special with ONE forgotten square …</h2> -->
+				<h2 class="single-ticker-text">Join our Discord</h2>
 				<h2 class="single-ticker-text">Super Bowl Kickoff: Sunday Feb 13 @ 5:30PM CST …</h2>
 				<h2 class="single-ticker-text">Follow @FootballHeadNFT on Twitter …</h2>
 				<!-- <h2 class="single-ticker-text">Join our Discord! …</h2> -->
@@ -705,7 +714,7 @@
 				</div>
 			</section>
 			
-			<section class="paydirt-section">
+			<section id="paydirt" class="paydirt-section">
 				<div class="content">
 					<h2>Welcome to</h2>
 					<h2 class="real-big">PAYDIRT</h2>
@@ -719,7 +728,8 @@
 								<div class="paydirt-winner-percent">15% of Pot</div>
 							</div>
 							<div class="paydirt-winner-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/tbd-fan.jpg" alt="Logo">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/images/jersey-37.png" alt="Logo">
+								<a href="https://opensea.io/assets/0xdd5bace9522991fd1e52404619a4872d838cf410/37" class="c-block-fill" target="_blank"></a>
 							</div>	
 							<div id="q1eth" class="paydirt-winner-money">		
 								<div class="paydirt-winnerETH fifteenPercentWinnerETH">0.00 ETH</div>
@@ -733,7 +743,8 @@
 								<div class="paydirt-winner-percent">15% of Pot</div>
 							</div>
 							<div class="paydirt-winner-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/tbd-fan.jpg" alt="Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/jersey-03.png" alt="Logo">
+								<a href="https://opensea.io/assets/0xdd5bace9522991fd1e52404619a4872d838cf410/90" class="c-block-fill" target="_blank"></a>
 							</div>	
 							<div id="q2eth" class="paydirt-winner-money">		
 								<div class="paydirt-winnerETH fifteenPercentWinnerETH">0.00 ETH</div>
@@ -747,7 +758,8 @@
 								<div class="paydirt-winner-percent">15% of Pot</div>
 							</div>
 							<div class="paydirt-winner-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/tbd-fan.jpg" alt="Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/jersey-06.png" alt="Logo">
+								<a href="https://opensea.io/assets/0xdd5bace9522991fd1e52404619a4872d838cf410/82" class="c-block-fill" target="_blank"></a>
 							</div>	
 							<div id="q3eth" class="paydirt-winner-money">		
 								<div class="paydirt-winnerETH fifteenPercentWinnerETH">0.00 ETH</div>
@@ -761,7 +773,8 @@
 								<div class="paydirt-winner-percent">45% of Pot</div>
 							</div>
 							<div class="paydirt-winner-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/tbd-fan.jpg" alt="Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/jersey-03.png" alt="Logo">
+								<a href="https://opensea.io/assets/0xdd5bace9522991fd1e52404619a4872d838cf410/90" class="c-block-fill" target="_blank"></a>
 							</div>	
 							<div id="q4eth" class="paydirt-winner-money">		
 								<div class="paydirt-winnerETH fortyFivePercentWinnerETH">0.00 ETH</div>

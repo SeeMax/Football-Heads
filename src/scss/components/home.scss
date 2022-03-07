@@ -42,7 +42,7 @@
 	overflow:hidden;
 
 	.content {
-		padding-top:160px;
+		padding-top:130px;
 	}
 }
 
@@ -68,29 +68,39 @@
 	text-shadow: 0px 5px #006D02;
 }
 
+.game-day-message {
+	border:5px solid white;
+	padding:70px;
+	max-width:760px;
+	background:black;
+	box-shadow:0px 10px #006D02;
+	margin-bottom:50px;
+
+	h2 {
+		
+		margin-bottom:0.5em;
+	}
+
+	h4 {
+		color:$yellow;
+		margin-bottom:20px;
+
+		a {
+			color:$yellow;
+		}
+	}
+
+	p {
+		
+	}
+}
 
 .hero-body-copy {
 	max-width:500px;
-	margin-bottom:60px;
+	margin-bottom:30px;
 }
 
-.don-test-area {
-	// display:none;
-	position: absolute;
-	left:-200px;
-	bottom:0;
-	padding:40px 30px;
-	margin:30px;
-	border:10px solid white;
 
-	h4 {
-		margin-bottom:15px;
-	}
-
-	button {
-		margin-top:20px;
-	}
-}
 
 .head-preview-images {
 	width:100%;
@@ -121,6 +131,7 @@
 		max-width:260px;
 	}
 }
+
 
 .sold-out-message {
 	color:$yellow;
@@ -292,6 +303,10 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+	}
+
+	.winner-grid-item {
+		
 	}
 
 	.single-grid-top {
@@ -717,6 +732,7 @@
 	}
 
 	.paydirt-winner-image {
+		position: relative;
 		border:5px solid white;
 		margin-bottom:24px;
 		box-shadow: 0px 10px rgba(0,0,0,.2);
@@ -1057,6 +1073,10 @@
 		}
 	}
 
+	.game-day-message {
+		padding:50px 20px;
+	}
+
 	.mint-button {
 		font-size:.8em;
 	}
@@ -1105,7 +1125,7 @@
 	
 		.single-paydirt-winner {
 			margin-bottom:60px;
-		}
+		}	
 	}
 
 	.rookie-steps-area {
